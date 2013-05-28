@@ -1,0 +1,60 @@
+﻿<Window x:Class="CURSORS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="识别控制窗口" Height="729" Width="1116" Loaded="Window_Loaded" Icon="/CURSORS;component/bin/Debug/CursorControl.ico" Closed="Window_Closed" StateChanged="Window_StateChanged">
+    <StackPanel Width="841" Height="910">
+        <StackPanel Orientation="Horizontal" Width="930">
+            <StackPanel Width="409">
+                <TextBox FontSize="18" Focusable="False" BorderThickness="0" Text="Depth Stream" HorizontalAlignment="Center"/>
+                <Image Width="380" Height="251" Name="depth" Margin="10 0 10 10" ImageFailed="depth_ImageFailed" />
+            </StackPanel>
+            <StackPanel Width="463">
+                <TextBox FontSize="18" Focusable="False" BorderThickness="0" Text="Skeleton (rendered if full body fits in frame)" HorizontalAlignment="Center" Width="415" />
+                <Canvas Width="397" Height="258" Name="skeleton" Margin="10 0 10 10" Background="Black" ClipToBounds="True"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Viewbox Width="300" Margin="10" Stretch="None" VerticalAlignment="Stretch">
+               
+                <TextBox FontSize="24" Name="frameRate" Margin="1" Focusable="False" BorderThickness="0" Text="0 fps" TextAlignment="Right" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Viewbox>
+            <StackPanel Width="609">
+                <TextBox FontSize="18" Focusable="False" BorderThickness="0" Text="Color Video Stream" HorizontalAlignment="Center" Name="VideoCaption" />
+                <Image Width="538" Height="225" Name="video" Margin="10 0 10 10"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Viewbox Width="837" Margin="1" Stretch="None" VerticalAlignment="Stretch">
+
+                <TextBox Margin="1" Name="textBlock0" Text="TextBlock" FontSize="26" Focusable="False" 
+                         BorderThickness="0" TextAlignment="Left" 
+                         HorizontalAlignment="Left" VerticalAlignment="Top" Width="797" />
+                </Viewbox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Viewbox Width="839" Margin="1" Stretch="None" VerticalAlignment="Stretch">
+
+                <TextBox Margin="1" Name="textBlock1" Text="TextBlock" FontSize="26" Focusable="False" 
+                         BorderThickness="0" TextAlignment="Left" 
+                         HorizontalAlignment="Left" VerticalAlignment="Top" Width="795" />
+            </Viewbox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Viewbox Width="839" Margin="1" Stretch="None" VerticalAlignment="Stretch">
+
+                <TextBox Margin="1" Name="textBlock2" Text="TextBlock" FontSize="26" Focusable="False" 
+                         BorderThickness="0" TextAlignment="Left" 
+                         HorizontalAlignment="Left" VerticalAlignment="Top" Width="797" />
+            </Viewbox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Viewbox Width="839" Margin="1" Stretch="None" VerticalAlignment="Stretch">
+
+                <TextBox Margin="1" Name="textBlock3" Text="TextBlock" FontSize="26" Focusable="False" 
+                         BorderThickness="0" TextAlignment="Left" 
+                         HorizontalAlignment="Left" VerticalAlignment="Top" Width="798" />
+            </Viewbox>
+        </StackPanel>
+
+    </StackPanel>
+</Window>
